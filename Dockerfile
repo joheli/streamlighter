@@ -7,7 +7,6 @@ WORKDIR /app
 COPY streamlighter.py /app/streamlighter.py
 COPY sl-apps /app/sl-apps
 COPY requirements.txt /app/requirements.txt
-COPY whl /app/whl
 
 # create non-root user app
 RUN useradd -m -d /app -s /bin/bash app; \
